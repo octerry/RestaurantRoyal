@@ -6,6 +6,18 @@
   box-sizing: border-box; 
 }
 
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-direction: column;
+    overflow-y: auto; 
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    scroll-snap-align: center;
+}
+
 /*SECTION COUVERTURE*/
 #section_couverture {
     height: 100vh;
