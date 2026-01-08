@@ -69,6 +69,7 @@ body {
     width: 100%;
     background-color: #D7D7D7;
     color: #121942;
+    padding: 2vw;
 }
 
 #section_sommaire #inner1 {
@@ -87,7 +88,8 @@ body {
 }
 
 #inner1 h1 {
-    margin: 2vh;
+    margin: 0 2vh;
+    margin-bottom: 2vw;
     font-size: 9vw;
 }
 
@@ -140,7 +142,7 @@ body {
     justify-content: center;
     align-items: center;
     border: calc(.2vw + .5vh) #121942 solid;
-    margin: 2vh 2vw; 
+    margin: 2vh calc(.5vw + .5vh); 
     padding: 0 7vw;
 }
 
@@ -246,6 +248,7 @@ body {
     background-size: contain;
     box-shadow: inset 2vh 0 2vh #00000080;
 }
+
 #section_presentation #couvercle_boite {
     margin: 5vw 0;
     width: 70vw;
@@ -325,6 +328,8 @@ body {
 
 /*SECTION FOOTER*/
 #section_footer {
+    display: flex;
+    flex-direction: column;
     background-color: #282828;
     width: 100%;
     padding: 2vw;
@@ -354,4 +359,55 @@ body {
     font-size: 5vw;
     text-align: center;
     margin-top: -10vw;
+}
+
+#progression_div {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 2vw;
+}
+
+#progression_div #progression_block {
+    margin-bottom: 1vw;
+    height: 2vw;
+    width: 100%;
+    border-radius: .5vw;
+    background-color: #D9D9D9;
+}
+
+#progression_block #progression_inner {
+    width: 80%;
+    height: 100%;
+    background-color: #3E6342 ;
+    border-radius: .5vw 0 0 .5vw;
+    clip-path: polygon(
+        53vw 0%,
+        50vw 100%,
+        0% 100%,
+        0% 0%
+    );
+}
+
+#progression_div #progression_under_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+}
+
+#progression_under_text h3 {
+    font-size: 2vw;
+    font-family: 'Gideon Roman';
+}
+
+#progression_under_text #participate_button {
+    background-color: #D9D9D9;
+    color: #282828;
+    padding: .5vw 1vw;
+    border-radius: 1vw;
 }
