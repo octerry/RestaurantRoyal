@@ -237,6 +237,7 @@ body {
 /*SECTION PRESENTATION*/
 #section_presentation {
     display: flex;
+    flex: 0 0 auto;
     flex-direction: column;
     align-items: center;
     justify-content: start;
@@ -326,18 +327,31 @@ body {
 #section_footer {
     background-color: #282828;
     width: 100%;
+    padding: 2vw;
 }
 
 #section_footer #header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: start;
+    width: 100%;
 }
 
 #header img {
     height: 20vw;
+    margin-top: calc(.5vh + 1vw);
 }
 
 #header h1 {
     color: #fff;
+    font-family: 'Imperial Script';
+    font-size: calc(2vh + 4vw);
+}
+
+#section_footer h2 {
+    color: white;
+    font-family: 'Imbue';
+    font-size: 5vw;
+    text-align: center;
+    margin-top: -10vw;
 }
