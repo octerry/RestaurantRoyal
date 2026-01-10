@@ -265,13 +265,59 @@ a {
 }
 
 #section_presentation #couvercle_boite {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 5vw 0;
+    height: 30vw;
     width: 70vw;
     background-image: url(Sources/boiteDeJeu.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     filter: drop-shadow(3vw 3vw 3vw #00000080);
+    transition: 250ms ease-in;
+}
+
+#couvercle_boite:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: drop-shadow(5vw 5vw 3vw #000000F0);
+}
+
+#couvercle_boite:hover > #trailer_button {
+    background-color: #00000050;
+    color: #ffffff;
+}
+
+#couvercle_boite.changed {
+    transform: translateX(-100vw) rotateZ(50deg);
+}
+
+#trailer_button {
+    color: #fff;
+    font-family: 'Dongle';
+    font-weight: 100;
+    font-size: 3vw;
+    padding: 0 3vw;
+    color: #ffffff90;
+    background-color: #00000010;
+    border-radius: 100vw;
+    transition: 250ms ease;
+}
+
+#video_youtube{
+    position: relative;
+    margin-top: -35vw;
+    margin-bottom: 5vw;
+    z-index: 0;
+}
+
+#video_youtube iframe{
+    box-shadow: 2vw 2vw 2vw #00000080;
+    width: 53vw;
+    height: 30vw;
 }
 
 #section_presentation #cup_of_coffee {

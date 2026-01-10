@@ -10,6 +10,8 @@ let crowdfundingRepresentation = document.getElementById('section_footer')
 let thanksRepresentation = document.getElementById('title')
 let creditsRepresentation = document.getElementById('credits_scrollref')
 
+let couvercleBoite = document.getElementById('couvercle_boite')
+
 
 //BOUTONS DU SOMMAIRE REACTIF
 function goTo (scrollValueGoal) {
@@ -39,3 +41,14 @@ buttonToCredits.addEventListener('click', function() {
     goTo(credits_scrollref.offsetTop)
 })
 
+
+//ANIMATION BOITE TRAILER
+couvercleBoite.addEventListener('click', function() {
+    this.classList.add('changed')
+})
+
+window.addEventListener('scroll', function() {
+    if (this.scrollY > (couvercleBoite.offsetTop) || this.scrollY < (couvercleBoite.offsetTop - this.innerHeight/1.5) ) {
+        couvercleBoite.classList.remove('changed')
+    }
+})
