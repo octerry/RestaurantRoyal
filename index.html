@@ -8,6 +8,7 @@
     <title>Restaurant Royal</title>
     <link rel="icon" href="Sources/icon.svg" />
     <link rel="stylesheet" href="style.css">
+    <script defer src="function.js"></script>
 </head>
     <body>
         <div id="section_couverture" class="slide">
@@ -21,7 +22,7 @@
                 <hr>
             </div>
             <div id="inner2">
-                <div class="innerCase1" id="presentation_part">
+                <div id="goto_presentation" class="innerCase1 sommaire_selection" id="presentation_part">
                     <h1>Présentation du jeu</h1>
                     <div class="line">
                         <p>Trailer</p>
@@ -36,7 +37,7 @@
                         <p>7</p>
                     </div>
                 </div>
-                <div class="innerCase1" id="rule_part">
+                <div id="goto_rules" class="innerCase1 sommaire_selection" id="rule_part">
                     <h1>Règles du jeu</h1>
                     <div class="line">
                         <p>Comment jouer</p>
@@ -48,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <div id="inner3" class="innerCase2">
+            <div id="inner3" class="innerCase2 sommaire_selection">
                 <h1>Crowdfunding</h1>
                 <div id="progression_bar"><div id="progression"></div></div>
                 <div id="under_text">
@@ -58,11 +59,11 @@
                 </div>
             </div>
             <div id="inner4">
-                <div class="innerCase2" id="thanks_part">
+                <div class="innerCase2 sommaire_selection" id="goto_thanks">
                     <h1>Remerciements</h1>
                     <p>Remerciements du Crowdfunding</p>
                 </div>
-                <div class="innerCase2" id="credits_part">
+                <div class="innerCase2 sommaire_selection" id="goto_credits">
                     <h1>Crédits</h1>
                     <p>Equipe de développement</p>
                 </div>
@@ -98,10 +99,12 @@
                     <div id="progression_inner"></div>
                 </div>
                 <div id="progression_under_text">
-                    <h3>20€/30€</h3>
-                    <div id="participate_button">
-                        <h3>Faire un don</h3>
-                    </div>
+                    <h3>80€/120€</h3>
+                    <a href="https://www.kickstarter.com/projects/521756736/331766193/edit/preview">
+                        <div id="participate_button">
+                            <h3>Faire un don</h3>
+                        </div>
+                    </a>
                     <h3>66%</h3>
                 </div>
             </div>
@@ -155,12 +158,12 @@
                     <div><h2>zygarde22</h2></div>
                 </div>
             </div>
-            <!--CREDITS-->
             <div class="footer">
                 <img src="Sources/decorationRight.svg">
                 <img src="Sources/decorationLeft.svg">
             </div>
-            <div class="header">
+            <!--CREDITS-->
+            <div class="header" id="credits_scrollref">
                 <img src="Sources/decorationLeft.svg">
                 <h1>Crédits</h1>
                 <img src="Sources/decorationRight.svg">

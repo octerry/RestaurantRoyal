@@ -29,6 +29,10 @@ body {
     min-height: 100vh;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*SECTION COUVERTURE*/
 #section_couverture {
     height: 100vh;
@@ -77,6 +81,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sommaire_selection {
+    transition: 250ms ease;
+}
+
+.sommaire_selection:hover {
+    cursor: pointer;
+    z-index: 2;
+    transform: translateY(-1vh);
+    box-shadow: 1vh 1vh 1vh #00000050;
 }
 
 #inner1 hr {
@@ -148,7 +163,7 @@ body {
 
 #inner3 h1 {
     position: absolute;
-    margin-top: calc(-6.5vh - 7.5vw);
+    margin-top: calc(-6.5vh - 6vw);
     left: 7vw;
     font-size: calc(1vh + 1vw);
     font-family: 'Emblema One';
@@ -616,7 +631,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 0 5vw;
+    padding: 0 2vw;
     margin-top: -10vw;
     margin-bottom: -5vw;
     align-items: center;
