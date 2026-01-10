@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Dosis:wght@200..800&family=Emblema+One&family=Fuzzy+Bubbles:wght@400;700&family=Galada&family=Gayathri:wght@100;400;700&family=Gideon+Roman&family=Hammersmith+One&family=IM+Fell+French+Canon+SC&family=Imbue:opsz,wght@10..100,100..900&family=Imperial+Script&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); /*Dongle, Dosis, Emblema One, Fuzzy Bubbles, Galada, Gayathri, Gideon Roman, Hammersmith One, IM Fell French Canon SC, Imperial Script, Koho*/
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Dosis:wght@200..800&family=Emblema+One&family=Fuzzy+Bubbles:wght@400;700&family=Galada&family=Gayathri:wght@100;400;700&family=Gideon+Roman&family=Hammersmith+One&family=IM+Fell+French+Canon+SC&family=Imbue:opsz,wght@10..100,100..900&family=Imperial+Script&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap&family=Gowun+Dodum&display=swap'); /*Dongle, Dosis, Emblema One, Fuzzy Bubbles, Galada, Gayathri, Gideon Roman, Hammersmith One, IM Fell French Canon SC, Imperial Script, Koho*/
 
 *, ::before, ::after {
   padding: 0;
@@ -336,26 +336,28 @@ body {
     padding: 2vw;
 }
 
-#section_footer #header {
+#section_footer .header {
     display: flex;
     justify-content: space-between;
     align-items: start;
     width: 100%;
+    background-color: #282828;
 }
 
-#header img {
+.header img {
     height: 20vw;
+    margin-right: 1.5vw;
     margin-top: calc(.5vh + 1vw);
 }
 
-#header h1 {
+.header h1 {
     color: #fff;
     font-family: 'Imperial Script';
     font-weight: 100;
     font-size: calc(2vh + 4vw);
 }
 
-#section_footer h2 {
+#section_footer .mainH2 {
     color: white;
     font-family: 'Imbue';
     font-size: 5vw;
@@ -524,4 +526,137 @@ body {
     font-weight: 100;
     font-size: calc(3vh + 4vw);
     margin-top: calc(9vw - 5vh);
+}
+
+#section_footer #big_donations {
+    margin: 5vw;
+}
+
+#big_donations h1 {
+    font-family: 'Gayathri';
+    font-weight: 100;
+    font-size: calc(1vw + 2vh);
+    color: #fff;
+    text-align: center;
+}
+
+#big_donations_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.donation_case {
+    border: #fff .7vw solid;
+    border-top-left-radius: calc(2vw + 1vh);
+    border-bottom-right-radius: calc(2vw + 1vh);
+    padding: .5vw 1vw;
+}
+
+#big_donations h2 {
+    font-family: 'Hammersmith One';
+    font-weight: 100;
+    font-size: calc(2vw + 1vh);
+    color: #fff;
+}
+
+#all_donations h1 {
+    font-family: 'Gayathri';
+    font-weight: 100;
+    font-size: calc(1vw + 2vh);
+    color: #fff;
+    text-align: center;
+}
+
+#all_donations_div {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#all_donations div {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(
+            5vh,
+            20vw
+        )
+    );
+
+}
+
+#all_donations h2 {
+    text-align: center;
+    font-family: 'Fuzzy Bubbles';
+    font-size: calc(.8vw + 1vh);
+    margin: 0 2vw;
+    color: #fff;
+}
+
+#section_footer .footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer img {
+    margin-top: -10vw;
+    transform: rotate(180deg);
+    height: 20vw;
+    margin-left: 1.5vw;
+}
+
+#credits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 5vw;
+    margin-top: -10vw;
+    margin-bottom: -5vw;
+    align-items: center;
+    color: #fff;
+}
+
+#school_part {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+#school_part img {
+    width: 20vh;
+}
+
+#school_part p {
+    font-family: 'Gowun Dodum';
+    font-size: 1.5vh;
+}
+
+#credits #credits_part {
+    margin-bottom: 5vh;
+}
+
+#credits_part h1 {
+    font-family: 'Galada';
+    font-weight: 100;
+    font-size: 2vh;
+    text-align: center;
+}
+
+#credits_part p {
+    font-family: 'Gowun Dodum';
+    font-size: 2vh;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+#logo_part img {
+    width: 18vh;
 }
