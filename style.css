@@ -721,3 +721,21 @@ a {
 #logo_part img {
     width: 18vh;
 }
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    position: absolute;
+    font-family: 'koho';
+    font-size: 1.5vh;
+    color: #fff;
+    width: 8vh;
+    height: 6vh;
+    background-image: radial-gradient(transparent, #000000bb);
+    border-radius: 0 5vh 5vh 5vh;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 150ms ease, all 200ms ease-out;
+}

@@ -12,6 +12,8 @@ let creditsRepresentation = document.getElementById('credits_scrollref')
 
 let couvercleBoite = document.getElementById('couvercle_boite')
 
+const circle = document.querySelector('.circle');
+
 
 //BOUTONS DU SOMMAIRE REACTIF
 function goTo (scrollValueGoal) {
@@ -51,4 +53,19 @@ window.addEventListener('scroll', function() {
     if (this.scrollY > (couvercleBoite.offsetTop) || this.scrollY < (couvercleBoite.offsetTop - this.innerHeight/1.5) ) {
         couvercleBoite.classList.remove('changed')
     }
+
+    if (this.scrollY > 0) {
+        circle.style.opacity = '0'
+    } else {
+        circle.style.opacity = '1'
+    }
 })
+
+//"SCROLL ME" CERCLE QUI SUIS
+document.addEventListener('mousemove', (e) => {
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+
+  circle.style.left = `${mouseX}px`;
+  circle.style.top = `${mouseY}px`;
+});
