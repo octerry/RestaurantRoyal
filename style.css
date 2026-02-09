@@ -335,10 +335,22 @@ a {
     height: 30vw;
 }
 
-#section_presentation #cup_of_coffee {
+#up_on_plate {
+    display: flex;
+    align-items: end;
+}
+
+#cup_of_coffee {
     width: 20vw;
-    margin-right: 40vw;
+    height: 20vw;
+    margin-bottom: -1vw;
     filter: drop-shadow(2vw 2vw 2vw #00000080);
+}
+
+model-viewer {
+    height: 30vw;
+    width: 50vw;
+    filter: drop-shadow(2vh 2vh 1vh #00000090);
 }
 
 #section_presentation #cutlery {

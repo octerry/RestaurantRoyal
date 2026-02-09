@@ -7,8 +7,8 @@
     <meta property="og:description" content="Site officiel du jeu de plateau Restaurant Royal">
     <title>Restaurant Royal</title>
     <link rel="icon" href="Sources/icon.svg" />
-    <link rel="stylesheet" href="style.css">
-    <script defer src="three.min.js"></script>
+    <link rel="stylesheet" href="style.css"><!-- Import the component -->
+    <script defer type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <script defer src="function.js"></script>
 </head>
     <body>
@@ -42,7 +42,6 @@
                         <p>7</p>
                     </div>
                 </div>
-                <model-3d background-color="#000000" src="/Sources/test.glb"></model-3d>
                 <div id="goto_rules" class="innerCase1 sommaire_selection" id="rule_part">
                     <h1>Règles du jeu</h1>
                     <div class="line">
@@ -84,7 +83,18 @@
             <div id="video_youtube">
                 <iframe src="https://www.youtube.com/embed/FtutLA63Cp8?si=wgXm1ysuXtidndLu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <img src="Sources/cupOfCoffee.png" id="cup_of_coffee">
+            <div id="up_on_plate">
+                <img src="Sources/cupOfCoffee.png" id="cup_of_coffee">
+                <div class="model-container">
+                    <model-viewer alt="3d model" src="Sources/scenePion.glb"
+                    autoplay
+                    camera-controls
+                    disable-zoom
+                    shadow-intensity="1"
+                    camera-orbit="25deg 8deg 200%"
+                    ></model-viewer>
+                </div>
+            </div>
             <div id="cutlery">
                 <img src="Sources/fourchette.png" id="fork">
                 <div id="plate">

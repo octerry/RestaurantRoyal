@@ -14,8 +14,6 @@ let couvercleBoite = document.getElementById('couvercle_boite')
 
 const circle = document.querySelector('.circle');
 
-let scene;
-
 function init() {
     scene = new THREE. Scene();
     scene.background = new THREE.Color(0xdddddd);
