@@ -8,11 +8,16 @@
     <title>Restaurant Royal</title>
     <link rel="icon" href="Sources/icon.svg" />
     <link rel="stylesheet" href="style.css">
+    <script defer src="three.min.js"></script>
     <script defer src="function.js"></script>
 </head>
     <body>
         <div id="section_couverture" class="slide">
-            <div id="couverture_logo"></div>
+            <div id="couverture_logo">
+                <h1>
+                    Présentation du jeu avec le financement participatif
+                </h1>
+            </div>
             <div id="couverture_background"></div>
         </div>
         <div id="section_sommaire" class="slide">
@@ -37,6 +42,7 @@
                         <p>7</p>
                     </div>
                 </div>
+                <model-3d background-color="#000000" src="/Sources/test.glb"></model-3d>
                 <div id="goto_rules" class="innerCase1 sommaire_selection" id="rule_part">
                     <h1>Règles du jeu</h1>
                     <div class="line">
@@ -53,7 +59,7 @@
                 <h1>Crowdfunding</h1>
                 <div id="progression_bar"><div id="progression"></div></div>
                 <div id="under_text">
-                    <h2>20€/30€</h2>
+                    <h2>158€/240€</h2>
                     <h3>Participer au financement</h3>
                     <h2>66%</h2>
                 </div>
@@ -106,7 +112,7 @@
                     <div id="progression_inner"></div>
                 </div>
                 <div id="progression_under_text">
-                    <h3>80€/120€</h3>
+                    <h3>158€/240€</h3>
                     <a href="https://www.kickstarter.com/projects/521756736/331766193/edit/preview">
                         <div id="participate_button">
                             <h3>Faire un don</h3>

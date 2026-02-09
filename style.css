@@ -54,6 +54,14 @@ a {
     filter: drop-shadow(2vh 2vh 1vh #00000090);
 }
 
+#couverture_logo h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: clamp(.1vh, calc(2vw + 1.3vh), 10vh);
+    margin-top: clamp(1vh, calc(20vw + 13vh), 100vh);
+}
+
 #couverture_background {
     height: 100%;
     width: 100%;
