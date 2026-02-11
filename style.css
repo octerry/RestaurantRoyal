@@ -57,8 +57,9 @@ a {
 #couverture_logo h1 {
     text-align: center;
     color: #fff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium';
     font-size: clamp(.1vh, calc(2vw + 1.3vh), 10vh);
+    font-weight: 100;
     margin-top: clamp(1vh, calc(20vw + 13vh), 100vh);
 }
 
@@ -266,7 +267,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    max-height: 250vw;
+    max-height: 300vw;
     background-image: url(Sources/woodTexture.png);
     background-size: contain;
     box-shadow: inset 2vh 0 2vh #00000080;
@@ -278,7 +279,7 @@ a {
     align-items: center;
     justify-content: center;
     margin: 5vw 0;
-    height: 60vw;
+    min-height: 60vw;
     width: 60vw;
     background-image: url(Sources/boiteDeJeu.png);
     background-position: center;
@@ -324,8 +325,8 @@ a {
 
 #video_youtube{
     position: relative;
-    margin-top: -35vw;
-    margin-bottom: 5vw;
+    margin-top: -60vw;
+    margin-bottom: 20vw;
     z-index: 0;
 }
 
