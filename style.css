@@ -266,7 +266,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    max-height: 180vw;
+    max-height: 250vw;
     background-image: url(Sources/woodTexture.png);
     background-size: contain;
     box-shadow: inset 2vh 0 2vh #00000080;
